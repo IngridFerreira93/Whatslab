@@ -2,10 +2,30 @@ import React from "react";
 import styled from "styled-components";
 import MessagesList from "./MessagesList";
 
-const Container = styled.div`
-  width: 45vw;
-  height: 2em;
-  display: flex;
+const UserInput = styled.input`
+  background-color: #febf71;
+  border-radius: 10px 0;
+  border: 1px solid lightgray;
+  margin: 3px 8px;
+  width: 80px;
+`;
+
+const MessageInput = styled.input`
+  background-color: #febf71;
+  border-radius: 10px 0;
+  border: 1px solid lightgray;
+  margin: 3px 4px 3px 8px;
+  flex-grow: 1;
+`;
+
+const SendMessage = styled.button`
+  background-color: #566e3d;
+  border-radius: 8px 0;
+  border: none;
+  margin: 3px 8px 3px 4px;
+  color: #bdc4a7;
+  font-weight: bold;
+  font-size: 16px;
 `;
 
 class CreateMessage extends React.Component {
