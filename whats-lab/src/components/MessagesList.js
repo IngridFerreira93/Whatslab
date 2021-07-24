@@ -8,7 +8,7 @@ const MessagesContainer = styled.div`
   margin-top: 10px;
   display: flex;
   flex-direction: column-reverse;
-  border-radius: 40px 0;
+  border-radius: 10px 10px;
   border: 1px solid lightgray;
 `;
 const Message = styled.p`
@@ -16,7 +16,7 @@ const Message = styled.p`
   margin: 3px;
   width: 50%;
   padding: 12px 15px;
-  border-radius: 0 30px;
+  border-radius: 10px 10px;
   border: 1px solid lightgray;
 `;
 const MyMessage = styled.p`
