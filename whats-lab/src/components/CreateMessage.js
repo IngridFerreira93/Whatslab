@@ -87,13 +87,13 @@ class CreateMessage extends React.Component {
         />
         <Container onKeyPress={this.enterSendMessage}>
           <UserInput
-            placeholder="  Usuário"
+            placeholder="Usuário"
             onChange={this.onChangeUser}
             value={this.state.user}
             required
           />
           <MessageInput
-            placeholder="  Mensagem"
+            placeholder="Mensagem"
             onChange={this.onChangeMessage}
             value={this.state.message}
             required
