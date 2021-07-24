@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WhatsLab
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Índice
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Descrição](#-descrição-do-projeto)
+- [Como acessar o projeto](#-como-acessar-o-projeto)
+- [Desenvolvimento](#-desenvolvimento)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖋 Descrição do projeto
 
-### `npm run build`
+## Introduzindo o conceito de Pair Programming!
+O projeto Whats-lab foi desenvolvido em dupla durante o Bootcamp da Labenu, com o intuito de colocarmos em prática o conteúdo estudado no curso até o momento: React e Styled-components. Trata-se de um aplicativo semelhante ao WhatsApp, Telegram, Messenger, mas sem a necessidade de desenvolver um sistema que envie e receba mensagens de fora, e sim que crie algo que simplesmente mostre novas mensagens.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Os critérios foram:
+- Cada mensagem deve possuir um remetente (ou seja, um usuário que enviou) e o conteúdo em si.
+- deve existir um local onde o usuário escolhe o nome do remetente (input) ; o conteúdo da mensagem (input) e um botão de enviar.
+- No layout, eles devem ficar um ao lado do outro. Sendo o campo do remetente com largura muito menor do que o campo do conteúdo.
+- Ao enviar a mensagem, os campos devem ser resetados para ficar em branco novamente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Desafio: 
+- Faça com que tanto o botão de enviar, como o botão "enter" envie as mensagens e Implemente a funcionalidade de deletar mensagem. Sempre que o usuário clicar duas vezes em cima de uma mensagem ela deve ser apagada.
+- Sempre que o nome do usuário for "eu", a mensagem deve aparecer à direita e sem mostrar o nome dele; se for outro nome, deve aparecer à esquerda, e deve mostrar o nome do remetente.
+- Criar link do surge.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🌎 Como acessar o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Link do surge](https://projeto-upfour-labenu-johnson.surge.sh)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🚀 Desenvolvimento
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Primeiro instale o [Git](https://git-scm.com/)
+```bash
+# Clonar o repositório
+git clone https://github.com/Ale557333/Landing-page.git
 
-## Learn More
+# Entrar no diretório
+cd landing-page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Utilizar extensão Live Server VS Code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido com 🧡 por Alexandre, Ingrid e Helany 🤝
