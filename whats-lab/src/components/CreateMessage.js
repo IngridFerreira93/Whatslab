@@ -34,16 +34,18 @@ const SendMessage = styled.button`
   font-size: 16px;
 `;
 
+//Area de Envio de Mensagem
 class CreateMessage extends React.Component {
   state = {
     user: "",
     message: "",
     messages: [],
   };
-
+  // Area Nome do usuário 
   onChangeUser = (event) => {
     this.setState({ user: event.target.value });
   };
+  // Area Mensagem 
   onChangeMessage = (event) => {
     this.setState({ message: event.target.value });
   };
@@ -53,21 +55,22 @@ class CreateMessage extends React.Component {
       const newMessage = {
         userValue: this.state.user,
         messageValue: this.state.message,
-      };
+      };  
       const newArray = [newMessage, ...this.state.messages];
-      this.setState({ messages: newArray });
-      this.setState({ message: "", user: "" });
+      this.setState({ messages: newArray });  
+      this.setState({ message: "", user: "" }); //Area para resetar o campo mensagem e nome
     } else {
       alert("Por favor, preencha todos os campos!");
     }
   };
-
+//Enviar com o botão Enter
   enterSendMessage = (event) => {
     if (event.key === "Enter") {
       this.onClickSendMessage();
     }
   };
 
+  //Deletar Mensagem quando clicar nela
   deleteMessage = (index) => {
     if (window.confirm("Tem certeza que quer remover essa mensagem?")) {
       const deletedMessage = this.state.messages;
@@ -79,6 +82,7 @@ class CreateMessage extends React.Component {
   render() {
     return (
       <div>
+{/* Chamando o MessagesList.js */}
         <MessagesList
           messages={this.state.messages}
           user={this.state.user}
@@ -86,14 +90,15 @@ class CreateMessage extends React.Component {
           onDoubleClick={this.deleteMessage}
         />
         <Container onKeyPress={this.enterSendMessage}>
+{/* Alterações dos Campos e Envio de Mensagem */}
           <UserInput
-            placeholder="  Usuário"
+            placeholder="Usuário"
             onChange={this.onChangeUser}
             value={this.state.user}
             required
           />
           <MessageInput
-            placeholder="  Mensagem"
+            placeholder="Mensagem"
             onChange={this.onChangeMessage}
             value={this.state.message}
             required
