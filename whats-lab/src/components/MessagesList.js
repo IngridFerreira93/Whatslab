@@ -50,6 +50,7 @@ const MyMessage = styled.p`
 
 `;
 
+//Area para mudar posição quando escrever "Eu" em usuário. 
 class MessagesList extends React.Component {
   render() {
     return (
