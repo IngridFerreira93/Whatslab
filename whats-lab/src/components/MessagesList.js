@@ -35,7 +35,7 @@ const Message = styled.p`
 `;
 const MyMessage = styled.p`
   align-self: flex-end;
-  background-color: red;
+  background-color: #075E54;
   margin: 3px;
   padding: 12px 15px;
   text-align: right;
